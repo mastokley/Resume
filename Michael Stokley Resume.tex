@@ -52,22 +52,23 @@
 \section{Profile}
 Software developer. I'm patient enough to take difficult projects seriously, and
 driven enough to automate tedious, needlessly manual work. In my previous
-accounting position, I greatly exceeded expectations by teaching myself SQL and
-relational database theory in order to automate the vast majority of my data
-entry and data quality tasks, and avoid using a cumbersome GUI. Since then, I
-spent two years studying math, computer science, and statistics at North Seattle
-College, attended Code Fellows' Python Development Intensive (taught by esteemed
-pythonista Cris Ewing), and have independently studied the classic textbook
-\textit{The Structure and Interpretation of Computer Programs}. Recently, I
-helped to co-found a local big data/nlp startup, and have been working as a
-freelance web developer.
+accounting position, I exceeded expectations by learning SQL to automate my data
+entry / data quality tasks (and avoid using a cumbersome GUI). Since then, I
+have spent two years studying math, computer science, and statistics at North
+Seattle College, attended Code Fellows' Python Development Intensive (taught by
+esteemed pythonista Cris Ewing). I've been working as a foundational member of
+the engineering team at iDatalabs, building out a customer facing web portal
+with Vue.js, Flask, and PostgreSQL. My goals for 2018: learn more diverse
+languages (e. g. functional, typed, low-level, or systems); learn to handle
+asynchrony without callbacks (using, for example, channels found in Go or
+Clojure); blog about design patterns; work through a few more chapters of SICP.
 
 \section{Technical Skills}
 \begin{cvcolumns}
   \cvcolumn{Proficient}{
     Python,
     Django,
-    Django REST Framework,
+    % Django REST Framework,
     Flask,
     PostgreSQL,
     JavaScript/HTML/CSS,
@@ -75,9 +76,9 @@ freelance web developer.
     Git,
     SQL,
     Unix,
-    Bash,
+    % Bash,
     MVC,
-    HTTP response/request protocol,
+    HTTP,
     OOP,
     FP,
     Highcharts
@@ -99,9 +100,11 @@ freelance web developer.
   \section{Technical Skills}
   \subsection{Proficient}
   Python, Django, Django REST Framework, Pyramid, Git, SQL, HTML/CSS,
-  JavaScript/jQuery, Unix systems, Shell Scripting, Org-mode, Regular Expressions
+  JavaScript/jQuery, Unix systems, Shell Scripting, Org-mode, Regular
+  Expressions
   \subsection{Familiar}
-  AWS Deployment, Heroku Deployment, Ansible, PostgreSQL, Nginx, Gunicorn, Scheme, Sed
+  AWS Deployment, Heroku Deployment, Ansible, PostgreSQL, Nginx, Gunicorn,
+  Scheme, Sed
 \end{comment}
 
 \section{Experience}
@@ -120,41 +123,47 @@ freelance web developer.
     \end{itemize}}
 \end{comment}
 
-  \cventry
-  {2017.01 - present}
-  {iDatalabs}
-  {Full Stack Engineer}
-  {}
-  {Bellevue, WA}
-  {I built and maintain a Vue.js single page application that displays and sells
-    marketing data; I also maintain and update the consumed api, written in
-    Flask (Python). I work on and debug all tiers of the architecture, from UI
-    to backend, to our Postgres and Mongo databases, to the various servers
-    deployed across Azure instances.  
-    \begin{itemize}
-    \item Designed and implemented a 'store' to manage client-side shared state
-    \end{itemize}}
-
-\cventry {2016.08 - 2016.10} {Red Mountain Software} {Freelance Web Developer} {} {Seattle, WA} {Designed, built, and tested an internal management application according to client specification. App built with Django and PostgreSQL, with jQuery on the front as needed.
+\cventry
+{2017.01 - present}
+{iDatalabs}
+{Full Stack Engineer}
+{}
+{Bellevue, WA}
+{I built and currently maintain a Vue.js single page application that displays and sells
+  marketing data; I also maintain and update the consumed api, written in Flask
+  (Python) as well as migrate underlying db schema to fit api requirements as
+  needed. I work on and debug all tiers of the architecture, from UI to backend,
+  to our Postgres and Mongo databases, to the various Apache and Nginx servers
+  deployed across Azure instances.
   \begin{itemize}
-  \item Designed and implemented database schema
-  \item Wrote models, views, and templates
-  \item Wrote a method to display arbitrary model fields (including reverse relationships) for arbitrary models
+  \item Designed and implemented a 'store' to manage client-side shared state
+  \item Optimized perceived page performance, including both frontend and
+    backend optimizations
+  \item Knocked up internal admin dashboards in Flask as needed
   \end{itemize}}
 
-\cventry {2016.07 - 2016.09} {Sternshus, Inc} {Co-founding Software Developer} {} {Seattle, WA} {Provided front-end solutions in the context of rapidly changing business requirements. Worked primarily in Webflow, Django, and MySQL. I am most proud of having written sed and python scripts to automate merging Webflow files into the larger Django project.}
+\cventry {2016.08 - 2016.10} {Red Mountain Software} {Freelance Web Developer}
+{} {Seattle, WA}
+{Designed, built, and tested an internal management application
+  according to client specification. Carefully designed and implemented database
+  schema to fit domain-specific business objects. App built with Django and PostgreSQL, with
+  jQuery on the front as needed.}
 
-\begin{comment}
+\cventry {2016.07 - 2016.09} {Sternshus, Inc} {Co-founding Software Developer}
+{}
+{Seattle, WA}
+{Provided front-end solutions in the context of rapidly
+  changing business requirements. Worked primarily in Webflow, Django, and
+  MySQL. I am most proud of having written sed and python scripts to automate
+  merging Webflow files into the larger Django project.
+}
 
-\cventry {2012.04 - 2015.04} {Cleanscapes} {AR Specialist} {} {Seattle, WA} {
-  \begin{itemize}
-  \item Wrote and maintained a library of accurate, sophisticated SQL queries to capture evolving data inconsistencies; these queries eliminated 37.5 labor hours per month despite at 126\% increase in customer accounts over a two year period
-  \item Designed database reports for internal and external customers, such as government officials and senior management
-  \item Delegated data entry and data revision tasks
-  \item Collaborated with operations, data quality, payment processing, and customer service teams to analyze and improve processes as new city contracts were won
-  \end{itemize}}
-
-\end{comment}
+\cventry {2012.04 - 2015.04} {Cleanscapes} {AR Specialist} {} {Seattle, WA}
+{Wrote and maintained a library of accurate, sophisticated SQL queries to
+  capture evolving data inconsistencies; these queries eliminated 37.5 labor
+  hours per month despite a 126\% increase in customer accounts over a two year
+  period
+}
 
 \section{Projects}
 
@@ -170,11 +179,51 @@ freelance web developer.
 
 \end{comment}
 
-\cventry {2016.04} {\href{http://github.com/TeamReciprocity/reciprocity}{github.com/TeamReciprocity/reciprocity}} {Reciprocity} {} {} {A full stack Python web application for recipe sharing and collaboration. Built with Django and PostgreSQL, deployed via Ansible to an AWS EC2 instance.}
+\cventry
+{2016.10}
+{\href{http://michaelstokley.com/Projects/nord-entities}{michaelstokley.com/Projects/nord-entities}}
+{Nord Entities}
+{}
+{}
+{Literate programming exploration of natural language processing techniques such as
+  tokenizing, chunking, and named entity recognition. Written in Python with
+  Requests, the NLTK, and Beautiful Soup.
+}
 
-\cventry {2016.04} {\href{https://github.com/mastokley/toy_domain_scraper}{github.com/mastokley/toy\_domain\_scraper}} {Toy Domain Scraper} {} {} {Toy web scraper built in Python. Uses breadth-first traversal for fast, reliable results.}
+\cventry
+{2016.06}
+{\href{http://michaelstokley.com/Projects/twitter-haiku}{michaelstokley.com/Projects/twitter-haiku}}
+{Twitter Haiku}
+{}
+{}
+{Literate programming exercise in web scraping, tokenizing, and functional
+  programming techniques learned from the SICP. Written in Python.
+}
 
-\cventry {2016.04} {\href{https://github.com/homequest/homequest}{github.com/homequest/homequest}} {HomeQuest} {} {} {A full-stack Python web application to gamify household chores and chore management. Manually implemented authorization, authentication, and row-level security. Built in Pyramid with a PostgreSQL database and deployed on Heroku.}
+\cventry {2016.04}
+{\href{http://michaelstokley.com/Projects/toy-domain-scraper}{michaelstokley.com/Projects/toy-domain-scraper}}
+{Toy Domain Scraper} {} {} {Toy web scraper built in Python. Uses breadth-first
+  traversal for fast, reliable results.
+}
+
+\begin{comment}
+  \cventry {2016.04}
+  {\href{http://github.com/TeamReciprocity/reciprocity}{github.com/TeamReciprocity/reciprocity}}
+  {Reciprocity} {} {} {A full stack Python web application for recipe sharing and
+    collaboration. Built with Django and PostgreSQL, deployed via Ansible to an
+    AWS EC2 instance.
+  }
+\end{comment}
+
+\begin{comment}
+  \cventry {2016.04}
+  {\href{https://github.com/homequest/homequest}{github.com/homequest/homequest}}
+  {HomeQuest} {} {} {A full-stack Python web application to gamify household
+    chores and chore management. Manually implemented authorization,
+    authentication, and row-level security. Built in Pyramid with a PostgreSQL
+    database and deployed on Heroku.
+  }
+\end{comment}
 
 \section{Education}
 \cventry {2016} {Certificate} {Code Fellows} {Seattle, WA} {} {Advanced Python development emphasizing test driven development, pair programming, agile methodologies, version control, and basic data structures and algorithms}
@@ -184,6 +233,6 @@ freelance web developer.
 
 \cventry {2009} {B. A. in Philosophy} {St. John's College}
 {Annapolis, MD} {} {}
-% {Double Major: Philosophy and the History of Math and Science\newline{} Double Minor: Classical Studies and Comparative Literature}
+%{Double Major: Philosophy and the History of Math and Science\newline{} Double Minor: Classical Studies and Comparative Literature}
 
 \end{document}
