@@ -52,16 +52,16 @@
 \section{Profile}
 Software developer. I'm patient enough to take difficult projects seriously, and
 driven enough to automate tedious, needlessly manual work. In my previous
-accounting position, I exceeded expectations by learning SQL to automate my data
-entry / data quality tasks (and avoid using a cumbersome GUI). Since then, I
-have spent two years studying math, computer science, and statistics at North
-Seattle College, attended Code Fellows' Python Development Intensive (taught by
-esteemed pythonista Cris Ewing). I've been working as a foundational member of
-the engineering team at iDatalabs, building out a customer facing web portal
-with Vue.js, Flask, and PostgreSQL. My goals for 2018: learn more diverse
+accounting position, I greatly exceeded expectations by learning SQL to automate
+data entry / data quality work (and avoid using a cumbersome GUI). Since
+then, I have spent two years studying math, computer science, and statistics at
+North Seattle College, attended Code Fellows' Python Development Intensive
+(taught by esteemed pythonista Cris Ewing). I've been working as a foundational
+member of the engineering team at iDatalabs, building out a customer facing web
+portal with Vue.js, Flask, and PostgreSQL. My goals for 2018: learn more diverse
 languages (e. g. functional, typed, low-level, or systems); learn to handle
-asynchrony without callbacks (using, for example, channels found in Go or
-Clojure); blog about design patterns; work through a few more chapters of SICP.
+asynchrony without callbacks (e.g. channels found in Go or Clojure); blog about
+design patterns; work through a few more chapters of SICP.
 
 \section{Technical Skills}
 \begin{cvcolumns}
@@ -85,14 +85,15 @@ Clojure); blog about design patterns; work through a few more chapters of SICP.
   }
   \cvcolumn{Familiar}{
     Webpack,
-    AWS Deployment,
-    Heroku Deployment,
+    AWS,
+    Heroku,
     Ansible,
     Nginx,
     Gunicorn,
     MongoDB,
     Pyramid,
-    Scheme
+    Scheme,
+    Clojure
   }
 \end{cvcolumns}
 
@@ -124,51 +125,50 @@ Clojure); blog about design patterns; work through a few more chapters of SICP.
 \end{comment}
 
 \cventry
-{2017.01 - present}
+{2017.01 - 2017.10}
 {iDatalabs}
 {Full Stack Engineer}
 {}
 {Bellevue, WA}
-{I built and currently maintain a Vue.js single page application that displays and sells
-  marketing data; I also maintain and update the consumed api, written in Flask
-  (Python) as well as migrate underlying db schema to fit api requirements as
-  needed. I work on and debug all tiers of the architecture, from UI to backend,
-  to our Postgres and Mongo databases, to the various Apache and Nginx servers
-  deployed across Azure instances.
+{I owned (built, maintained, and took full responsibility for) a Vue.js single
+  page application that displays and sells marketing data; I maintained and
+  updated the consumed api (written in Flask) and updated underlying db schema
+  to fit api requirements as needed. I worked on all tiers of the architecture,
+  from UI to backend, to our Postgres and Mongo databases, to the various Apache
+  and Nginx servers deployed across Azure instances.
   \begin{itemize}
   \item Designed and implemented a 'store' to manage client-side shared state
+    using Vuex
   \item Optimized perceived page performance, including both frontend and
     backend optimizations
-  \item Knocked up internal admin dashboards in Flask as needed
+  \item Knocked up internal admin dashboards in Flask as needed for Sales,
+    Marketing, Analytics
   \end{itemize}}
 
 \cventry {2016.08 - 2016.10} {Red Mountain Software} {Freelance Web Developer}
 {} {Seattle, WA}
-{Designed, built, and tested an internal management application
-  according to client specification. Carefully designed and implemented database
-  schema to fit domain-specific business objects. App built with Django and PostgreSQL, with
-  jQuery on the front as needed.}
+{Designed, built, and tested an internal management application according to
+  client specification. Thoughtfully designed and implemented db schema to
+  fit domain-specific business objects. App built with Django and PostgreSQL
+  with jQuery on the front as needed.}
 
 \cventry {2016.07 - 2016.09} {Sternshus, Inc} {Co-founding Software Developer}
 {}
 {Seattle, WA}
-{Provided front-end solutions in the context of rapidly
-  changing business requirements. Worked primarily in Webflow, Django, and
-  MySQL. I am most proud of having written sed and python scripts to automate
-  merging Webflow files into the larger Django project.
-}
+{Provided frontend solutions in the context of rapidly changing business
+  requirements. Worked primarily in Webflow, Django, and MySQL. I am most proud
+  of having written sed and python scripts to automate merging Webflow files
+  into the larger Django project.}
 
 \cventry {2012.04 - 2015.04} {Cleanscapes} {AR Specialist} {} {Seattle, WA}
 {Wrote and maintained a library of accurate, sophisticated SQL queries to
   capture evolving data inconsistencies; these queries eliminated 37.5 labor
   hours per month despite a 126\% increase in customer accounts over a two year
-  period
-}
+  period}
 
 \section{Projects}
 
 \begin{comment}
-
   \cventry
   {date}
   {github url}
@@ -176,7 +176,6 @@ Clojure); blog about design patterns; work through a few more chapters of SICP.
   {}
   {}
   {description}
-
 \end{comment}
 
 \cventry
@@ -185,10 +184,9 @@ Clojure); blog about design patterns; work through a few more chapters of SICP.
 {Nord Entities}
 {}
 {}
-{Literate programming exploration of natural language processing techniques such as
-  tokenizing, chunking, and named entity recognition. Written in Python with
-  Requests, the NLTK, and Beautiful Soup.
-}
+{Literate programming exploration of natural language processing techniques such
+  as tokenizing, chunking, and named entity recognition. Written in Python with
+  Requests, the NLTK, and Beautiful Soup.}
 
 \cventry
 {2016.06}
@@ -197,42 +195,65 @@ Clojure); blog about design patterns; work through a few more chapters of SICP.
 {}
 {}
 {Literate programming exercise in web scraping, tokenizing, and functional
-  programming techniques learned from the SICP. Written in Python.
-}
+  programming techniques learned from the SICP. Written in Python.}
 
 \cventry {2016.04}
 {\href{http://michaelstokley.com/Projects/toy-domain-scraper}{michaelstokley.com/Projects/toy-domain-scraper}}
-{Toy Domain Scraper} {} {} {Toy web scraper built in Python. Uses breadth-first
-  traversal for fast, reliable results.
-}
+{Toy Domain Scraper}
+{}
+{}
+{Toy web scraper built in Python. Uses breadth-first traversal for fast,
+  reliable results.}
 
 \begin{comment}
   \cventry {2016.04}
   {\href{http://github.com/TeamReciprocity/reciprocity}{github.com/TeamReciprocity/reciprocity}}
-  {Reciprocity} {} {} {A full stack Python web application for recipe sharing and
-    collaboration. Built with Django and PostgreSQL, deployed via Ansible to an
-    AWS EC2 instance.
-  }
+  {Reciprocity}
+  {}
+  {}
+  {A full stack Python web application for recipe sharing and collaboration.
+    Built with Django and PostgreSQL, deployed via Ansible to an AWS EC2
+    instance.}
 \end{comment}
 
 \begin{comment}
   \cventry {2016.04}
   {\href{https://github.com/homequest/homequest}{github.com/homequest/homequest}}
-  {HomeQuest} {} {} {A full-stack Python web application to gamify household
-    chores and chore management. Manually implemented authorization,
-    authentication, and row-level security. Built in Pyramid with a PostgreSQL
-    database and deployed on Heroku.
-  }
+  {HomeQuest}
+  {}
+  {}
+  {A full-stack Python web application to gamify household chores and chore
+    management. Manually implemented authorization, authentication, and
+    row-level security. Built in Pyramid with a PostgreSQL database and deployed
+    on Heroku.}
 \end{comment}
 
 \section{Education}
-\cventry {2016} {Certificate} {Code Fellows} {Seattle, WA} {} {Advanced Python development emphasizing test driven development, pair programming, agile methodologies, version control, and basic data structures and algorithms}
+\cventry
+{2016}
+{Certificate}
+{Code Fellows}
+{Seattle, WA}
+{}
+{Advanced Python development emphasizing test driven development, pair
+  programming, agile methodologies, version control, and basic data structures
+  and algorithms}
 
-\cventry {2012--2014} {Coursework in Math, Computer Science, and Statistics}
-{North Seattle College} {Seattle, WA} {} {}
+\cventry
+{2012--2014}
+{Coursework in Math, Computer Science, and Statistics}
+{North Seattle College}
+{Seattle, WA}
+{}
+{}
 
-\cventry {2009} {B. A. in Philosophy} {St. John's College}
-{Annapolis, MD} {} {}
+\cventry
+{2009}
+{B. A. in Philosophy}
+{St. John's College}
+{Annapolis, MD}
+{}
+{}
 %{Double Major: Philosophy and the History of Math and Science\newline{} Double Minor: Classical Studies and Comparative Literature}
 
 \end{document}
